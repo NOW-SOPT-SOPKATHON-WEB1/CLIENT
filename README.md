@@ -55,8 +55,8 @@
 	|-- 📁 pages
 	|      |--📁APage
 	|      |     |-- 📁ApageComponent
-    |      |     |    |-- Apage.tsx
-	|      |     |    |-- Apage.style.ts
+        |      |     |    |-- ApageComponent.tsx
+	|      |     |    |-- ApageComponent.style.ts
 	|      |     |-- Apage.tsx
 	|      |     |-- Apage.style.ts
 	|      |--📁BPage
