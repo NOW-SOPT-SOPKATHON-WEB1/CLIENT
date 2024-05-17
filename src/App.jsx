@@ -1,15 +1,11 @@
-import GlobalStyle from './styles/globalStyle';
-
-
-
-
+import "./App.css";
+import Router from "./router/Router";
 
 function App() {
-  
   return (
-    <div>
-      <GlobalStyle>Welcome to Emotion</GlobalStyle>
-    </div>
+    <>
+      <Router />
+    </>
   );
 }
 
