@@ -8,22 +8,21 @@
 
 ## 👬 팀 소개
 
-
 ## 🔗 기술 스택
 
-| **category** | **stack** |
-| :----------: | :-------: |
-|      `Common`        |      `yarn`     |
-|`Language`|`JavaScript`|
-|`Build`|`Vite`|
-|`Framework`|`React`|
-|`Style`|`emotion`|
-|`Data Fetching`|`Axios`|
-|`Collaboration`|`Notion`, `Figma`, `Discord`|
+|  **category**   |          **stack**           |
+| :-------------: | :--------------------------: |
+|    `Common`     |            `yarn`            |
+|   `Language`    |         `JavaScript`         |
+|     `Build`     |            `Vite`            |
+|   `Framework`   |           `React`            |
+|     `Style`     |          `emotion`           |
+| `Data Fetching` |           `Axios`            |
+| `Collaboration` | `Notion`, `Figma`, `Discord` |
 
 ## 🎯 기능 목록
 
-- 
+-
 
 ## 🖋️ 커밋 컨벤션
 
@@ -48,7 +47,7 @@
 	|-- 📁 components
 	|      |-- 📁Button
 	|          |-- Button.tsx
-	|          |-- Button.style.ts 
+	|          |-- Button.style.ts
 	|-- 📁 constants
 	|      |-- index.ts (상수 데이터 많다면 분리)
 	|-- 📁 hooks
@@ -65,8 +64,8 @@
 	|-- 📁 styles
 	|      |-- 📁 theme
 	|      |-- GlobalStyle.ts
-	|-- 📁 utils 
-	|-- 📁 type 
+	|-- 📁 utils
+	|-- 📁 type
 	|-- App.tsx
 	|-- main.tsx
 |-- .eslintrc.json
