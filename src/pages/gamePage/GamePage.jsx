@@ -8,9 +8,15 @@ import ModalCheckBtn from '../../components/common/ModalCheckBtn';
 
 const GamePage = () => {
   const [showTMIModal, setShowTMIModal] = useState(false);
+  const [pplNum, setPplNum] = useState(8);
+  const maxpplNum = 8;
 
   const handleTMIModal = () => {
     setShowTMIModal(!showTMIModal);
+  };
+
+  const decreasePPlnum = () => {
+    setPplNum((prev) => prev - 1);
   };
   return (
     <>
@@ -24,12 +30,15 @@ const GamePage = () => {
         <GamePageH1>
           얼음조각을 눌러{'\n'}우리 사이의 온도를 올려주세요!
         </GamePageH1>
-        <IceGame handleTMIModal={handleTMIModal} />
+        <IceGame
+          handleTMIModal={handleTMIModal}
+          decreasePPlnum={decreasePPlnum}
+        />
         <ThermoPart>
-          <Thermo />
+          <Thermo pplNum={pplNum} maxpplNum={maxpplNum} />
           <ThermoTxtWrapper>
             <ThermoTxtTitle>우리 사이</ThermoTxtTitle>
-            <ThermoTxt>-6˚C</ThermoTxt>
+            <ThermoTxt>-{pplNum}˚C</ThermoTxt>
           </ThermoTxtWrapper>
         </ThermoPart>
         <BGGrad />

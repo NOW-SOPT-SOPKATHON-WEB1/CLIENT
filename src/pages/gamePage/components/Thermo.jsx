@@ -2,12 +2,12 @@ import React from 'react';
 import thermoBG from '../../../assets/gamePage/thermoBg.png';
 import heart from '../../../assets/gamePage/thermoheart.png';
 import styled from '@emotion/styled';
-const Thermo = (height) => {
+const Thermo = ({ pplNum, maxpplNum }) => {
   return (
     <ThermoContainer>
       <ThermoBG src={thermoBG} alt='온도계 배경' />
       <ThermoMeterWrapper>
-        <ThermoMeter h={140} />
+        <ThermoMeter h={140 - pplNum * (140 / maxpplNum)} />
         <ThermoHeart src={heart} />
       </ThermoMeterWrapper>
     </ThermoContainer>
@@ -44,7 +44,7 @@ const ThermoMeterWrapper = styled.div`
 `;
 const ThermoHeart = styled.img`
   position: absolute;
-  bottom: 7px;
+  bottom: 9px;
   width: 3.1rem;
   height: fit-content;
   z-index: 4;
