@@ -11,7 +11,7 @@ function WhiteModal({ children }) {
 }
 
 const ModalContainer = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
