@@ -27,8 +27,8 @@ const GamePage = () => {
 
   useEffect(() => {
     if (pplNum === 0) {
+      setTitleTxt(0);
       setTimeout(() => {
-        setTitleTxt(0);
         setShowFinishModal(true);
       }, 8000);
     }
