@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
   position: relative;
-  height: 100vh;
+  /* height: 100%; */
   width: 100%;
 `;
 
 const ButtonContainer = styled.button`
   position: absolute;
-  bottom: 15rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 

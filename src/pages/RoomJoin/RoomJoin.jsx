@@ -8,7 +8,7 @@ const RoomJoin = () => {
   return (
     <>
       <Header/>
-      <s.Wrapper>
+      <s.Container>
       <s.Title>방장에게 전달받은 코드를 입력하세요</s.Title>
         <s.Input
           type="text"
@@ -16,7 +16,7 @@ const RoomJoin = () => {
           placeholder='숫자 여섯 자리'
           onChange={(e) => setCode(e.target.value)}
         />
-      </s.Wrapper>
+      </s.Container>
       <Button>참여하기</Button>
     </>
   );

@@ -4,6 +4,7 @@ import BPage from "../pages/BPage/BPage";
 import CPage from "../pages/CPage/CPage";
 import RoomCreate from "../pages/RoomCreate/RoomCreate"
 import RoomJoin from "../pages/RoomJoin/RoomJoin";
+import Writing from "../pages/Writing/Writing";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path="/cpage" element={<CPage />}></Route>
         <Route path="/room-create" element={<RoomCreate />}></Route>
         <Route path="/room-join" element={<RoomJoin />}></Route>
+        <Route path="/writing" element={<Writing />}></Route>
       </Routes>
     </BrowserRouter>
   );
