@@ -1,21 +1,24 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import txt1 from '../../../assets/gamePage/txt1.png';
+import txt2 from '../../../assets/gamePage/txt2.png';
 
 const GameTitle = ({ text }) => {
-  return <GamePageH1>{text}</GamePageH1>;
+  return <>{text ? <TxtImg src={txt1} /> : <TxtImg2 src={txt2} />}</>;
 };
-const GamePageH1 = styled.h1`
-  color: #256cf8;
+
+const TxtImg = styled.img`
   margin: 3.5rem 2rem;
-  top: 3rem;
-  /* Text/Head02: Bold */
-  font-family: 'ONE Mobile';
-  font-size: 2.3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.026rem;
   z-index: 2;
-  white-space: pre-wrap;
+  width: 30.8rem;
+  height: 7rem;
+  height: fit-content;
+`;
+const TxtImg2 = styled.img`
+  margin: 3.5rem 2rem;
+  z-index: 2;
+  width: fit-content;
+  height: 7rem;
+  height: fit-content;
 `;
 export default GameTitle;
