@@ -1,8 +1,8 @@
-import BPageComponent from './BPageComponent/BPageComponent';
 import styled from '@emotion/styled';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import penguin01 from '../../assets/gamePage/penguin01.png';
-import logo from '../../assets/gamePage/logo.png';
+import svgitems from '../../assets/gamePage';
+
 function AnotherPage() {
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ function AnotherPage() {
     <section>
       <BackDiv>
         <WrapperDiv>
-          <HeaderImg src={logo}></HeaderImg>
+          <HeaderImg src={svgitems.meltinglogo}></HeaderImg>
         </WrapperDiv>
         <WrapperButtion>
           <Button onClick={GotoCpage}>방 만들기</Button>
@@ -25,13 +25,9 @@ function AnotherPage() {
         </WrapperButtion>
       </BackDiv>
 
-      <WrapperPanguin>
-        <PanguinText>
-          초대 코드를 받았다면 ‘참여하기' 버튼을 눌러주세요!
-        </PanguinText>
-      </WrapperPanguin>
+      <MalImg src={svgitems.malpungson} alt='펭귄 말풍선' />
 
-      <Img src={penguin01} alt='팽귄'></Img>
+      <Img src={svgitems.penguin} alt='팽귄'></Img>
     </section>
   );
 }
@@ -48,16 +44,6 @@ const BackDiv = styled.div`
     --color-bg-gradient,
     linear-gradient(0deg, #cfe0ff 0%, #fff 100%)
   );
-`;
-
-const HeaderName = styled.div`
-  color: #000;
-  font-family: Inter;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.402px;
 `;
 
 const WrapperDiv = styled.div`
@@ -112,45 +98,15 @@ const Button = styled.button`
   }
 `;
 
-const Div = styled.div`
-  height: 142px;
-  border-top: 1px solid #ccc;
-  background: #fff;
-`;
-
-const WrapperPanguin = styled.div`
-  display: inline-flex;
-  padding: 15px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 20px;
-  background: var(--color-grayscale-white, #fff);
+const MalImg = styled.img`
   position: relative;
-  position: fixed;
-  margin-left: 0.5rem;
-  margin-bottom: 22rem;
-
-  bottom: 20rem;
-`;
-
-const PanguinText = styled.div`
-  padding-left: 1px;
-  color: var(--color-grayscale-gray08, #666);
-  text-align: center;
-
-  /* Text/Body01: Bold */
-  font-family: Pretendard;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 21px */
-  letter-spacing: -0.14px;
+  bottom: 25rem;
+  left: 2rem;
 `;
 
 const Img = styled.img`
   position: relative;
-  bottom: 22.2rem;
+  bottom: 30.3rem;
   left: 13rem;
   width: 240px;
   height: 240px;

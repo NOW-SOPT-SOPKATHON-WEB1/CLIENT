@@ -1,7 +1,8 @@
-import Button from '../../components/Button/Button';
-import APageComponent from './APageComponent/APageComponent';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import * as s from './APage.style';
+import styled from '@emotion/styled';
+import svgitems from '../../assets/gamePage';
+import svgbackground from '../../assets/landingPage';
 
 const APage = () => {
   const navigate = useNavigate();
@@ -14,10 +15,8 @@ const APage = () => {
   };
   return (
     <section>
-      <s.MainDiv>
-        <s.MainButton onClick={GotoBpage}>게임 시작하기</s.MainButton>
-      </s.MainDiv>
-      <div></div>
+      <img src={svgbackground.landingBackground} alt='landing_background' />
+      <s.MainButton onClick={GotoBpage}>게임 시작하기</s.MainButton>
       <s.RuleDiv onClick={GotoRulePage}>게임 룰 보러 가기</s.RuleDiv>
     </section>
   );
