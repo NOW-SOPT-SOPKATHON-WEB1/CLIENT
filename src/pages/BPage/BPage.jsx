@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
-import penguin01 from '../../assets/gamePage/penguin01.png';
 import svgitems from '../../assets/gamePage';
 
 function AnotherPage() {
@@ -87,7 +86,7 @@ const Button = styled.button`
   :hover {
     border-radius: 15px;
     border: 1px solid #d6d6d6;
-    background: #6f6f6f;
+    background: #a5b3cc;
     color: #fff;
     font-family: Inter;
     font-size: 16px;

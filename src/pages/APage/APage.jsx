@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import * as s from './APage.style';
-import styled from '@emotion/styled';
-import svgitems from '../../assets/gamePage';
+
 import svgbackground from '../../assets/landingPage';
 
 const APage = () => {

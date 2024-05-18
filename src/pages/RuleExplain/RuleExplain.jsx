@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import hands from '../../assets/gamePage/hands.png';
 
 const RuleExplain = () => {
