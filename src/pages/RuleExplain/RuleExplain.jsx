@@ -8,7 +8,7 @@ const RuleExplain = () => {
     navigate('/bpage');
   };
   return (
-    <section>
+    <div style={{width: "375px", height: "667px"}}>
       <Img src={hands} alt='악수'></Img>
       <WrapperDiv>
         <HeaderDiv>멜팅에 어서 오세요.</HeaderDiv>
@@ -28,7 +28,7 @@ const RuleExplain = () => {
       </WrapperDiv>
 
       <MainButton onClick={GotoBpage}>게임 시작하기</MainButton>
-    </section>
+    </div>
   );
 };
 
@@ -37,7 +37,7 @@ export default RuleExplain;
 const HeaderDiv = styled.div`
   color: var(--color-blue-03-primary, #256cf8);
   position: relative;
-  margin-left: 2rem;
+  padding-left: 2rem;
   /* Text/Head01: Bold */
   font-family: Pretendard;
   font-size: 29px;
@@ -49,7 +49,7 @@ const HeaderDiv = styled.div`
 
 const ContentDiv = styled.div`
   position: relative;
-  margin-left: 2rem;
+  padding-left: 2rem;
   width: 380px;
   color: var(--color-grayscale-gray08, #666);
 
@@ -64,7 +64,7 @@ const ContentDiv = styled.div`
 
 const ContentDiv2 = styled.div`
   position: relative;
-  margin-left: 3rem;
+  padding-left: 3rem;
   width: 380px;
   color: var(--color-grayscale-gray08, #666);
 
@@ -79,7 +79,7 @@ const ContentDiv2 = styled.div`
 
 const WrapperDiv = styled.div`
   position: fixed;
-  margin-top: 7rem;
+  padding-top: 7rem;
   width: 375px;
   height: 667px;
   background: var(
@@ -90,7 +90,7 @@ const WrapperDiv = styled.div`
 
 const ContentWrapper = styled.div`
   position: fixed;
-  margin-top: 3rem;
+  padding-top: 3rem;
 `;
 
 const MainButton = styled.button`
@@ -109,7 +109,7 @@ const MainButton = styled.button`
   border: none;
   cursor: pointer;
   position: relative;
-  top: 630px;
+  top: 590px;
   left: 15px;
 `;
 
@@ -117,7 +117,7 @@ const Img = styled.img`
   width: 200px;
   height: 200px;
   position: fixed;
-  margin-top: 38rem;
-  margin-left: 15rem;
+  padding-top: 38rem;
+  padding-left: 15rem;
   z-index: 2;
 `;

@@ -78,14 +78,14 @@ const Button = styled.button`
   height: 160px;
   border: none;
   border-radius: 15px;
-  border: 1px solid #d6d6d6;
+  border: 0;
   background: var(--color-blue01, #cfe0ff);
 
   margin-left: 26px;
   cursor: pointer;
   :hover {
     border-radius: 15px;
-    border: 1px solid #d6d6d6;
+    border: 0;
     background: #a5b3cc;
     color: #fff;
     font-family: Inter;
