@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from '../common/Modal';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import styled from '@emotion/styled';
@@ -14,6 +14,9 @@ const CreateRoomModalContent = () => {
     navigate('/writing');
   };
 
+  useEffect(() => {
+    setValue(Math.floor(100000 + Math.random() * 900000));
+  }, []);
   return (
     <>
       {isOpenModal && (
