@@ -2,14 +2,22 @@ import React from 'react';
 import finishImg from '../../../assets/gamePage/afterFinishImg.png';
 import restartBtnImg from '../../../assets/gamePage/restartBtnImg.png';
 import styled from '@emotion/styled';
+import { useNavigate } from 'react-router-dom';
 const AfterFinishModal = () => {
+  const navigate = useNavigate();
   return (
     <ModalContainer>
       <DialogBox>
         <FisnishWrapper>
           <FinishTxt>여러분들의 대화도{'\n'}물처럼 흘러가길 바라요!</FinishTxt>
           <FinishImg src={finishImg} alt='finish' />
-          <RestartBtn src={restartBtnImg} alt='restart' />
+          <RestartBtn
+            src={restartBtnImg}
+            alt='restart'
+            onClick={() => {
+              navigate('/');
+            }}
+          />
         </FisnishWrapper>
       </DialogBox>
       <Backdrop />
