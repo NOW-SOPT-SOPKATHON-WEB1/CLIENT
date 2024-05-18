@@ -24,6 +24,7 @@ export const Input = styled.input`
   border: 0;
   border-radius: 10px;
 
+  color: #525252;
   background-color: white;
   font-size: 18px;
   font-weight: 700;
@@ -46,6 +47,7 @@ export const TextInput = styled.textarea`
 
   resize: none;
 
+  color: #525252;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%; /* 21px */
