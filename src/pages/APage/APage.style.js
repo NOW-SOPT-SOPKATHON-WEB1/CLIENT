@@ -17,7 +17,8 @@ export const MainButton = styled.button`
   border: none;
   cursor: pointer;
   position: relative;
-  top: 230px;
+  bottom: 15rem;
+  left: 1.2rem;
 `;
 export const MainDiv = styled.div`
   width: 100%;
@@ -38,7 +39,7 @@ export const RuleDiv = styled.div`
   color: var(--color-grayscale-gray09, #525252);
   width: 10rem;
   position: relative;
-  top: 2rem;
+  bottom: 8rem;
   /* Text/Body01: SemiBold */
   font-family: Pretendard;
   font-size: 14px;
