@@ -29,14 +29,14 @@
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
+            <a href="https://github.com/ijieun">
               <img src="https://avatars.githubusercontent.com/u/99737532?v=4" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>ijieun</b>
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
+            <a href="https://github.com/j-nary">
               <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/83453646/07fef1be-236d-4726-8214-b8705f25cab9" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>j-nary</b>
