@@ -12,8 +12,9 @@ const Writing = () => {
 
   useEffect(() => {
     if (name && tmi) setNext(true);
+    else setNext(false);
   }, [name, tmi]);
-  
+
   return (
     <Background src={bgSrc}>
       <Header isIcon='true'>오늘의 TMI</Header>
