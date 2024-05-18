@@ -39,11 +39,12 @@ const DialogBox = styled.div`
 const Backdrop = styled.div`
   position: fixed;
   margin: 0 auto;
-
+  /* 배경 위치 수정되면 top 삭제하기 */
+  top: 0;
   z-index: 9999;
 
   width: 375px;
-  height: 100vh;
+  height: 667px;
   background-color: rgba(30, 36, 67, 0.53);
 `;
 
