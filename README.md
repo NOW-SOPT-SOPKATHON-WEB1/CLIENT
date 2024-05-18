@@ -173,4 +173,4 @@ Github-flow
 <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/fddeee7c-7ef5-432e-975f-ae671995ebfe" alt="웨비 팀원들 사진 (before)"/>
 
 <h3>After</h3>
-<img src="" alt="웨비 팀원들 사진 (after)"/>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/b4492b9b-db9c-4b19-ab32-e698aa132292" alt="웨비 팀원들 사진 (after)"/>
