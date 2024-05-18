@@ -39,6 +39,8 @@ export const CodeBlock = styled.div`
 `
 
 export const CodeInput = styled.input`
-  display: none;
+  opacity: 0;
   width: 100px;
+  position: absolute;
+  
 `

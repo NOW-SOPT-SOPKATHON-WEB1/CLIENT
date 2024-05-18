@@ -10,7 +10,9 @@ const RoomJoin = () => {
   const [codeArr, setCodeArr] = useState('');
   const inputRef = useRef(null);
   const handleCodeInput = (e) => {
-    if (e.target.value.length <= 6) setCodeArr(e.target.value);
+    const input = e.target.value;
+    const numericInput = input.replace(/\D/g, ''); // 숫자가 아닌 문자 제거
+    if (numericInput.length <= 6) setCodeArr(numericInput);
   };
 
   useEffect(() => {
@@ -18,10 +20,6 @@ const RoomJoin = () => {
       inputRef.current.focus();
     }
   }, []);
-  useEffect(() => {
-    console.log({ codeArr });
-  }, [codeArr]);
-  
   return (
     <Background src={bgSrc}>
       <Header isIcon='true'>참여하기</Header>
@@ -35,7 +33,7 @@ const RoomJoin = () => {
             value={codeArr}
             onChange={handleCodeInput}
           />
-          <InputBlock code={Array.from(codeArr)} inputRef={inputRef} />
+           <InputBlock code={Array.from(codeArr)} inputRef={inputRef} /> 
         </s.CodeBlock>
       </s.Container>
       <Button>참여하기</Button>
