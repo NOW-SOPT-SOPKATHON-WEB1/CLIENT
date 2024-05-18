@@ -52,6 +52,8 @@ const IceFlexWrapper = styled.div`
   margin-top: -2.4rem;
 `;
 const IceGameContainer = styled.div`
+  width: 375px;
+  overflow-x: clip;
   display: flex;
   flex-direction: column;
   align-items: center;
