@@ -15,6 +15,7 @@ const GamePage = () => {
     '얼음조각을 눌러\n우리 사이의 온도를 올려주세요!'
   );
   const maxpplNum = 8;
+  const [showFinishModal, setShowFinishModal] = useState(false);
 
   const handleTMIModal = () => {
     setShowTMIModal(!showTMIModal);
@@ -26,7 +27,10 @@ const GamePage = () => {
 
   useEffect(() => {
     if (pplNum === 0) {
-      setTitleTxt('우리 사이 얼음이\n모두 녹았습니다.');
+      setTimeout(() => {
+        setTitleTxt('우리 사이 얼음이\n모두 녹았습니다.');
+        setShowFinishModal(true);
+      }, 3000);
     }
   }, [pplNum]);
 
@@ -38,7 +42,7 @@ const GamePage = () => {
         </Modal>
       )}
       {pplNum === 0 && <Finished />}
-
+      {!showTMIModal && showFinishModal && <Modal />}
       <GamePageBox>
         <GameTitle text={titleTxt} />
         <IceGame
