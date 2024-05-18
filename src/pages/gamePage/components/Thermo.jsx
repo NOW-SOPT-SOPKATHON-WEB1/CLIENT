@@ -7,7 +7,7 @@ const Thermo = (height) => {
     <ThermoContainer>
       <ThermoBG src={thermoBG} alt='온도계 배경' />
       <ThermoMeterWrapper>
-        <ThermoMeter h={70} />
+        <ThermoMeter h={140} />
         <ThermoHeart src={heart} />
       </ThermoMeterWrapper>
     </ThermoContainer>

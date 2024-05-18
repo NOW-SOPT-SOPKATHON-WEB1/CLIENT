@@ -1,22 +1,47 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Ice from './Ice';
+import IceWhite from './IceWhite';
 
 const IceGame = () => {
   return (
     <IceGameContainer>
       <IceFlexWrapper>
-        <Ice />
-        <Ice />
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
       </IceFlexWrapper>
       <IceFlexWrapper>
+        <IceWhite />
+        <IceWhite />
         <Ice />
         <Ice />
         <Ice />
+        <IceWhite />
       </IceFlexWrapper>
       <IceFlexWrapper>
+        <IceWhite />
         <Ice />
         <Ice />
+        <Ice />
+        <IceWhite />
+      </IceFlexWrapper>
+      <IceFlexWrapper>
+        <IceWhite />
+        <IceWhite />
+        <Ice />
+        <Ice />
+        <IceWhite />
+        <IceWhite />
+      </IceFlexWrapper>
+      <IceFlexWrapper>
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
+        <IceWhite />
       </IceFlexWrapper>
     </IceGameContainer>
   );

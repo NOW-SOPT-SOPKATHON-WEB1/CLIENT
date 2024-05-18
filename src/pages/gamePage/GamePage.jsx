@@ -18,10 +18,23 @@ const GamePage = () => {
           <ThermoTxt>-6</ThermoTxt>
         </ThermoTxtWrapper>
       </ThermoPart>
+      <BGGrad />
       <BGImage src={bgImg} alt='background' />
     </GamePageBox>
   );
 };
+const BGGrad = styled.div`
+  position: absolute;
+  top: 0;
+  width: 375px;
+  height: 667px;
+  background: linear-gradient(
+    180deg,
+    #fff 13.42%,
+    #fff 38.09%,
+    rgba(255, 255, 255, 0) 65.07%
+  );
+`;
 const ThermoPart = styled.div`
   position: absolute;
   left: 1.6rem;
@@ -47,7 +60,7 @@ const BGImage = styled.img`
   z-index: 1;
 `;
 const GamePageH1 = styled.h1`
-  color: #fff;
+  color: #256cf8;
   margin: 3.5rem 0;
 
   top: 3rem;
@@ -59,6 +72,7 @@ const GamePageH1 = styled.h1`
   line-height: 150%; /* 34.5px */
   letter-spacing: -0.023rem;
   white-space: pre-wrap;
+  z-index: 2;
 `;
 const ThermoTxtWrapper = styled.div`
   display: flex;
@@ -77,5 +91,6 @@ const ThermoTxt = styled.p`
   line-height: normal;
   letter-spacing: -0.02rem;
   margin: 0;
+  z-index: 3;
 `;
 export default GamePage;
