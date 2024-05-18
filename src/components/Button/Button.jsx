@@ -16,7 +16,7 @@ const ButtonContainer = styled.button`
   background-color: #6C9EFF;
   color: white;
 
-  border: solid 1px #d6d6d6;
+  border: 0;
   border-radius: 10px;
 
   font-size: 16px;

@@ -34,6 +34,15 @@ export const Input = styled.input`
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    color: #a3a3a3;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.18px;
+  }
 `;
 
 export const TextInput = styled.textarea`
@@ -54,5 +63,14 @@ export const TextInput = styled.textarea`
   letter-spacing: -0.14px;
   &:focus {
     outline: none;
+  }
+  &::placeholder {
+    color: #ccc;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
   }
 `;
