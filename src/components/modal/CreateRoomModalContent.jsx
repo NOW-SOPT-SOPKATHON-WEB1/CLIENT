@@ -48,33 +48,33 @@ const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 10rem;
 `;
 const LabelWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 10rem;
   justify-content: space-between;
 `;
 
 const NumberDisplay = styled.div`
   display: flex;
-  margin: 10px 0 20px 0;
+  margin: 1rem 0 2rem 0;
 `;
 const NumberWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  border-radius: 10px;
-  width: 27px;
-  height: 29px;
-  margin: 2px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 2.7rem;
+  height: 2.9rem;
+  margin: 0.2rem;
   background-color: lightgray;
 `;
 const CloseBtn = styled.button`
-  width: 13px;
-  height: 22px;
+  width: 1.3rem;
+  height: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
