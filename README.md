@@ -43,10 +43,10 @@
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/j-nary">
+              <img src="https://avatars.githubusercontent.com/u/63349683?s=400&u=a84d37faf374b967d62a87295ecef5cd2cb123c9&v=4" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>(202010927choiminjune)</b>
             </a>
         </td>
     </tr>
