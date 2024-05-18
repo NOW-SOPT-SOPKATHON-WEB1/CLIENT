@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-function ModalCheckBtn({ onClick }) {
-  return <CheckBtn onClick={onClick}>확인</CheckBtn>;
+function ModalCheckBtn({ onClick, value }) {
+  return <CheckBtn onClick={onClick}>{value}</CheckBtn>;
 }
 
 export default ModalCheckBtn;
@@ -15,4 +15,6 @@ const CheckBtn = styled.button`
   border: none;
   border-radius: 0.8rem;
   font-size: 2rem;
+  position: relative;
+  top: 3rem;
 `;
