@@ -17,4 +17,5 @@ const CheckBtn = styled.button`
   font-size: 2rem;
   position: relative;
   top: 3rem;
+  cursor: pointer;
 `;

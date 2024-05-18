@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import ModalCheckBtn from '../common/ModalCheckBtn';
 import WhiteModal from '../common/WhiteModal';
+import { useNavigate } from 'react-router-dom';
 
 const IntroModalContent = () => {
   const [isOpenModal, setOpenModal] = useState(true);
-
+  const navigate = useNavigate();
   const onClickToggleModal = () => {
     setOpenModal(false);
+    navigate('/game');
   };
   return (
     <>

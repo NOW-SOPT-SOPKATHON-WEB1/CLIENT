@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import DPage from '../pages/DPage/DPage';
 import APage from '../pages/APage/APage';
 import BPage from '../pages/BPage/BPage';
-import CPage from '../pages/CPage/CPage';
 import RoomCreate from '../pages/RoomCreate/RoomCreate';
 import RoomJoin from '../pages/RoomJoin/RoomJoin';
 import Writing from '../pages/Writing/Writing';
