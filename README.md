@@ -30,9 +30,9 @@
         </td>
       <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://avatars.githubusercontent.com/u/99737532?v=4" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>ijieun</b>
             </a>
         </td>
       <td style="min-width: 150px;">
