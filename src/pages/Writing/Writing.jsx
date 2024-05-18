@@ -4,6 +4,7 @@ import * as s from '../Writing/Writing.style';
 import Button from '../../components/Button/Button';
 import Background from '../../components/Background/Background';
 import bgSrc from '../../assets/bgImg2.png';
+import postTMI from '../../apis/postTMI';
 
 const Writing = () => {
   const [name, setName] = useState('');
@@ -15,6 +16,12 @@ const Writing = () => {
     else setNext(false);
   }, [name, tmi]);
 
+  const postCreateRes = async () => {
+    const res = await postTMI(name, tmi);
+  };
+  const handleBtn = () => {
+    postCreateRes();
+  }
   return (
     <Background src={bgSrc}>
       <Header isIcon='true'>오늘의 TMI</Header>
@@ -34,7 +41,11 @@ const Writing = () => {
           placeholder={`오늘 아침에 직접 샐러드를 만들어 먹었어요.\n뭔가 부족하다 싶었는데, 드레싱을 까먹고 안 뿌렸지 뭐예요!\n다들 드레싱 좋아하시나요? 어떤 드레싱 좋아하세요?\n(최대 100자 가능)`}
         />
       </s.Container>
-      <Button style={{backgroundColor: !next && '#CFE0FF'}}>멜팅하러 가기</Button>
+      <div onClick={handleBtn}>
+        <Button style={{ backgroundColor: !next && '#CFE0FF' }}>
+          멜팅하러 가기
+        </Button>
+      </div>
     </Background>
   );
 };
