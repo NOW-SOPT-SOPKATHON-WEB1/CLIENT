@@ -1,14 +1,86 @@
-# 잠은 죽어서 자자
+<div align="center">
 
-**NOW SOPT WEB 1조**
+<h2> (서비스이름) </h2>
 
-본 프로젝트는 SOPT 34th, 솝커톤 프로젝트입니다.
+<img src=""  alt="서비스대표-이미지" />
+<div>(서비스 소개)</div>
 
-> 2024.05.18
+</div>
 
-## 👬 팀 소개
+<h2> ✨ (서비스) 주요 기능 </h2>
 
-## 🔗 기술 스택
+<h3> 1️⃣ (기능) </h3>
+<img src=""  alt="기능1-대표이미지" />
+<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+
+<h3> 2️⃣ (기능) </h3>
+<img src=""  alt="기능1-대표이미지" />
+<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+
+<h2> 👥 Team </h2>
+
+<table align="center">
+    <tr align="center">
+      <td style="min-width: 150px;">
+            <a href="">
+              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <br />
+              <b>(깃허브계정명)</b>
+            </a>
+        </td>
+      <td style="min-width: 150px;">
+            <a href="">
+              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <br />
+              <b>(깃허브계정명)</b>
+            </a>
+        </td>
+      <td style="min-width: 150px;">
+            <a href="">
+              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <br />
+              <b>(깃허브계정명)</b>
+            </a>
+        </td>
+      <td style="min-width: 150px;">
+            <a href="">
+              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <br />
+              <b>(깃허브계정명)</b>
+            </a>
+        </td>
+    </tr>
+    <tr align="center">
+       <td>
+            승연 <br/>
+      </td>
+       <td>
+            지은 <br/>
+      </td>
+       <td>
+            진 <br/>
+      </td>
+       <td>
+            민준 <br/>
+      </td>
+    </tr>
+  	<tr align="center">
+       <td>
+            (역할분담) <br/>
+      </td>
+       <td>
+            (역할분담) <br/>
+      </td>
+       <td>
+            (역할분담) <br/>
+      </td>
+       <td>
+            (역할분담) <br/>
+      </td>
+    </tr>
+</table>
+
+<h2> 🛠 기술스택 </h2>
 
 |  **category**   |          **stack**           |
 | :-------------: | :--------------------------: |
@@ -20,9 +92,11 @@
 | `Data Fetching` |           `Axios`            |
 | `Collaboration` | `Notion`, `Figma`, `Discord` |
 
-## 🎯 기능 목록
+<br/>
 
--
+<h2>  📄 컨벤션 및 브랜치 전략 </h2>
+
+<br/>
 
 ## 🖋️ 커밋 컨벤션
 
@@ -36,6 +110,14 @@
 |   init:   |      개발 환경 초기 세팅      |
 |  chore:   | 그 외 자잘한 수정 (주석 삭제) |
 
+<br />
+
+## 🖋️ 브랜치 전략
+
+Github-flow
+
+<br />
+
 ## 📁 폴더 구조
 
 ```
@@ -46,30 +128,40 @@
 	|-- 📁 api
 	|-- 📁 components
 	|      |-- 📁Button
-	|          |-- Button.tsx
-	|          |-- Button.style.ts
+	|          |-- Button.jsx
+	|          |-- Button.style.js
 	|-- 📁 constants
-	|      |-- index.ts (상수 데이터 많다면 분리)
-	|-- 📁 hooks
+	|      |-- index.js (상수 데이터 많다면 분리)
 	|-- 📁 pages
 	|      |--📁APage
 	|      |     |-- 📁ApageComponent
-        |      |     |    |-- ApageComponent.tsx
-	|      |     |    |-- ApageComponent.style.ts
-	|      |     |-- Apage.tsx
-	|      |     |-- Apage.style.ts
+    |      |     |    |-- ApageComponent.jsx
+	|      |     |    |-- ApageComponent.style.js
+	|      |     |-- Apage.jsx
+	|      |     |-- Apage.style.js
 	|      |--📁BPage
 	|      |--📁CPage
 	|-- 📁 router
 	|-- 📁 styles
 	|      |-- 📁 theme
-	|      |-- GlobalStyle.ts
+	|      |-- GlobalStyle.js
 	|-- 📁 utils
-	|-- 📁 type
-	|-- App.tsx
-	|-- main.tsx
-|-- .eslintrc.json
+	|-- App.jsx
+	|-- main.jsx
 |-- .prettierrc
-|-- .stylelintrc
 |-- .gitignore
 ```
+
+<h3>우리조 그라운드 룰</h3>
+
+* 말투 둥글게 둥글게 해피솝커톤 했으면 좋겠어용 !! 즐거운 추억 쌓아가요 - 진이
+* 모르는 부분 바로바로 얘기하기!! -승연
+* 웃으면서 좋은 결과 내자 !!!! -지은
+* 모르는 부분 있으면 바로바로 질문하여 의사소통에 문제가 안생기게 하기 !! 다같이 파이팅합시다~~ -민준
+
+<h2> 새싹 웨비 Before and After</h2>
+<h3>Before</h3>
+<img src="" alt="웨비 팀원들 사진 (before)"/>
+ 
+<h3>After</h3>
+<img src="" alt="웨비 팀원들 사진 (after)"/>
