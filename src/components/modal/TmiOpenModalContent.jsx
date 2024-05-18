@@ -1,26 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import WhiteModal from '../common/WhiteModal';
+import getTMI from '../../apis/getTMI';
 
-const TmiOpenModalContent = ({
-  title = '첫 번째 TMI',
-  body = '오늘 나는 집에서 트월킹을 연습했다',
-}) => {
-  const [isOpenModal, setOpenModal] = useState(true);
-
+const TmiOpenModalContent = ({ onClick, userId }) => {
+  const [isOpenModal, setOpenModal] = useState(false);
+  const [tmi, setTmi] = useState({
+    title: '첫 번째 TMI',
+    body: '오늘 나는 집에서 트월킹을 연습했다',
+    name: '김소희',
+  });
   const handleCheckBtnClick = () => {
-    console.log('Check 버튼이 클릭되었습니다.');
+    setOpenModal(!isOpenModal);
   };
-
+  const getTmiRes = async () => {
+    const res = await getTMI(1, userId);
+    const newTmi = {
+      title: `${res.id}번째 TMI`,
+      body: res.content,
+      name: res.name,
+    };
+    setTmi(newTmi);
+  };
+  useEffect(() => {
+    getTmiRes();
+  }, []);
   return (
     <>
-      {isOpenModal && (
-        <WhiteModal>
-          <Title>{title}</Title>
-          <TmiBody>{body}</TmiBody>
+      <WhiteModal>
+        <Title>{tmi.title}</Title>
+        <TmiBody>{tmi.body}</TmiBody>
+
+        {isOpenModal ? (
+          <NameLabel onClick={onClick}>{tmi.name}</NameLabel>
+        ) : (
           <CheckBtn onClick={handleCheckBtnClick}>누구일까요?</CheckBtn>
-        </WhiteModal>
-      )}
+        )}
+      </WhiteModal>
     </>
   );
 };
@@ -59,4 +75,25 @@ const CheckBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const NameLabel = styled.div`
+  display: flex;
+  height: fit-content;
+  padding: 17px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  flex-shrink: 0;
+  background-color: #cfe0ff;
+  color: #256cf8;
+
+  /* Text/Head04: Bold */
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.2px;
 `;

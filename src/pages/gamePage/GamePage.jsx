@@ -4,9 +4,9 @@ import styled from '@emotion/styled';
 import bgImg from '../../assets/gamePage/bgImg.png';
 import Thermo from './components/Thermo';
 import Modal from '../../components/common/Modal';
-import ModalCheckBtn from '../../components/common/ModalCheckBtn';
 import Finished from './components/Finished';
 import GameTitle from './components/GameTitle';
+import TmiOpenModalContent from '../../components/modal/TmiOpenModalContent';
 
 const GamePage = () => {
   const [showTMIModal, setShowTMIModal] = useState(false);
@@ -37,9 +37,7 @@ const GamePage = () => {
   return (
     <>
       {showTMIModal && (
-        <Modal>
-          <ModalCheckBtn onClick={handleTMIModal} />
-        </Modal>
+        <TmiOpenModalContent onClick={handleTMIModal} userId={pplNum + 1} />
       )}
       {pplNum === 0 && <Finished />}
       {!showTMIModal && showFinishModal && <Modal />}
