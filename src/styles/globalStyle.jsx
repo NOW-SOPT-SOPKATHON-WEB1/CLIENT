@@ -4,8 +4,10 @@ const baseStyle = css`
   /* 전체 배경 색상 설정 */
   html {
     line-height: 1;
-    font-size: 67.5%;
+    font-size: 62.5%;
     background-color: #e0e0e0;
+  }
+  body {
   }
   body {
     width: 375px; /* 모바일 가로 사이즈 375 고정 */
