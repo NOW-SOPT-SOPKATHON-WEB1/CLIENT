@@ -22,10 +22,10 @@
 <table align="center">
     <tr align="center">
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/wrryu09">
+              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/e6c7b49b-e3b4-4a62-8ce8-86297484801d" width="200" alt="깃허브계정-프로필사진"/>
               <br />
-              <b>(깃허브계정명)</b>
+              <b>wrryu09</b>
             </a>
         </td>
       <td style="min-width: 150px;">
@@ -66,16 +66,16 @@
     </tr>
   	<tr align="center">
        <td>
-            (역할분담) <br/>
+            메인 게임 페이지 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            모달 제작 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            TMI 생성, 방 개설 및 참여 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            랜딩페이지, 방 참여 방법 선택 <br/>
       </td>
     </tr>
 </table>
@@ -161,7 +161,7 @@ Github-flow
 
 <h2> 새싹 웨비 Before and After</h2>
 <h3>Before</h3>
-<img src="" alt="웨비 팀원들 사진 (before)"/>
- 
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/fddeee7c-7ef5-432e-975f-ae671995ebfe" alt="웨비 팀원들 사진 (before)"/>
+
 <h3>After</h3>
 <img src="" alt="웨비 팀원들 사진 (after)"/>
