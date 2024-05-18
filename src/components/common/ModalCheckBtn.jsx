@@ -8,8 +8,8 @@ function ModalCheckBtn({ onClick }) {
 export default ModalCheckBtn;
 
 const CheckBtn = styled.button`
-  width: 25rem;
-  height: 4.1rem;
+  width: 30.2rem;
+  height: 5.3rem;
   color: white;
   background-color: #787878;
   border: none;
