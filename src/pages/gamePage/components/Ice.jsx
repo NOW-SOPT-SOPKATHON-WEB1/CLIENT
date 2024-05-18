@@ -1,30 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import iceImg from '../../../assets/gamePage/ice.png';
 import styled from '@emotion/styled';
+import { css, keyframes } from '@emotion/react';
 
 /** 얼음~! */
 const Ice = () => {
+  const [touched, setTouched] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    if (touched) {
+      const timer = setTimeout(() => {
+        setHidden(true);
+      }, 480);
+      return () => clearTimeout(timer);
+    }
+  }, [touched]);
   return (
-    <IceContainer>
+    <IceContainer touched={touched} hidden={hidden}>
       <IceImg src={iceImg} alt='ice' />
       <IceTouchBox
         onClick={() => {
           console.log('ice clicked');
+          setTouched(true);
         }}
       />
     </IceContainer>
   );
 };
 
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+`;
 const IceContainer = styled.div`
   display: flex;
   width: fit-content;
   height: fit-content;
   justify-content: center;
   align-items: center;
+  ${(props) =>
+    props.touched &&
+    css`
+      animation: ${fadeOut} 0.5s ease-out;
+    `}
+  ${(props) =>
+    props.hidden &&
+    css`
+      visibility: hidden;
+    `}
 `;
 const IceImg = styled.img`
-  width: 6rem;
+  width: 7.7rem;
   height: fit-content;
 `;
 const IceTouchBox = styled.div`
