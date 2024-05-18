@@ -14,28 +14,41 @@ const GamePage = () => {
       <ThermoPart>
         <Thermo />
         <ThermoTxtWrapper>
-          <ThermoTxt>우리 사이</ThermoTxt>
-          <ThermoTxt>-6</ThermoTxt>
+          <ThermoTxtTitle>우리 사이</ThermoTxtTitle>
+          <ThermoTxt>-6˚C</ThermoTxt>
         </ThermoTxtWrapper>
       </ThermoPart>
+      <BGGrad />
       <BGImage src={bgImg} alt='background' />
     </GamePageBox>
   );
 };
+const BGGrad = styled.div`
+  position: absolute;
+  top: 0;
+  width: 375px;
+  height: 667px;
+  background: linear-gradient(
+    180deg,
+    #fff 13.42%,
+    #fff 38.09%,
+    rgba(255, 255, 255, 0) 65.07%
+  );
+`;
 const ThermoPart = styled.div`
   position: absolute;
   left: 1.6rem;
   bottom: 3rem;
   display: flex;
   align-items: flex-end;
-  gap: 2rem;
+  gap: 1.3rem;
   z-index: 3;
 `;
 const GamePageBox = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 100vh;
+  height: 667px;
   width: 100%;
   align-items: center;
   background-color: #6c9eff;
@@ -47,17 +60,18 @@ const BGImage = styled.img`
   z-index: 1;
 `;
 const GamePageH1 = styled.h1`
-  color: #fff;
+  color: #256cf8;
   margin: 3.5rem 0;
 
   top: 3rem;
-  /* Text/Head03: Bold */
+  /* Text/Head02: Bold */
   font-family: Pretendard;
   font-size: 2.3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 34.5px */
-  letter-spacing: -0.023rem;
+  line-height: normal;
+  letter-spacing: -0.026rem;
+  z-index: 2;
   white-space: pre-wrap;
 `;
 const ThermoTxtWrapper = styled.div`
@@ -68,8 +82,7 @@ const ThermoTxtWrapper = styled.div`
 `;
 const ThermoTxt = styled.p`
   color: #256cf8;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+
   font-family: Pretendard;
   font-size: 2.2rem;
   font-style: normal;
@@ -77,5 +90,9 @@ const ThermoTxt = styled.p`
   line-height: normal;
   letter-spacing: -0.02rem;
   margin: 0;
+  z-index: 3;
+`;
+const ThermoTxtTitle = styled(ThermoTxt)`
+  font-size: 1.6rem;
 `;
 export default GamePage;

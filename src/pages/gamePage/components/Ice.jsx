@@ -16,15 +16,15 @@ const Ice = () => {
       return () => clearTimeout(timer);
     }
   }, [touched]);
+
+  const handleIceClick = () => {
+    console.log('ice clicked');
+    setTouched(true);
+  };
   return (
     <IceContainer touched={touched} hidden={hidden}>
       <IceImg src={iceImg} alt='ice' />
-      <IceTouchBox
-        onClick={() => {
-          console.log('ice clicked');
-          setTouched(true);
-        }}
-      />
+      <IceTouchBox onClick={handleIceClick} />
     </IceContainer>
   );
 };

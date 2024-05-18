@@ -7,7 +7,7 @@ const Thermo = (height) => {
     <ThermoContainer>
       <ThermoBG src={thermoBG} alt='온도계 배경' />
       <ThermoMeterWrapper>
-        <ThermoMeter h={70} />
+        <ThermoMeter h={140} />
         <ThermoHeart src={heart} />
       </ThermoMeterWrapper>
     </ThermoContainer>
@@ -15,11 +15,12 @@ const Thermo = (height) => {
 };
 
 const ThermoMeter = styled.div`
-  width: 1.7rem;
+  width: 1rem;
   height: ${({ h }) => `${h}px`};
   z-index: 3;
-  background-color: #6c9eff;
   margin-bottom: 2rem;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #6c9eff 0%, #fff 100%);
 `;
 const ThermoContainer = styled.div`
   position: relative;
@@ -32,7 +33,7 @@ const ThermoContainer = styled.div`
 `;
 const ThermoBG = styled.img`
   position: relative;
-  width: 6.7rem;
+  width: 4.8rem;
 `;
 const ThermoMeterWrapper = styled.div`
   display: flex;
@@ -44,7 +45,7 @@ const ThermoMeterWrapper = styled.div`
 const ThermoHeart = styled.img`
   position: absolute;
   bottom: 7px;
-  width: 5.4rem;
+  width: 3.1rem;
   height: fit-content;
   z-index: 4;
 `;
