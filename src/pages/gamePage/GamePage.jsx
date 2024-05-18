@@ -7,18 +7,18 @@ import Finished from './components/Finished';
 import GameTitle from './components/GameTitle';
 import TmiOpenModalContent from '../../components/modal/TmiOpenModalContent';
 import AfterFinishModal from './components/AfterFinishModal';
-
+import zeroImg from '../../assets/gamePage/zero.png';
 const GamePage = () => {
   const [showTMIModal, setShowTMIModal] = useState(false);
   const [pplNum, setPplNum] = useState(8);
-  const [titleTxt, setTitleTxt] = useState(
-    '얼음조각을 눌러\n우리 사이의 온도를 올려주세요!'
-  );
+  const [titleTxt, setTitleTxt] = useState(1);
   const maxpplNum = 8;
   const [showFinishModal, setShowFinishModal] = useState(false);
 
   const handleTMIModal = () => {
-    setShowTMIModal(!showTMIModal);
+    setTimeout(() => {
+      setShowTMIModal(!showTMIModal);
+    }, 800);
   };
 
   const decreasePPlnum = () => {
@@ -28,14 +28,14 @@ const GamePage = () => {
   useEffect(() => {
     if (pplNum === 0) {
       setTimeout(() => {
-        setTitleTxt('우리 사이 얼음이\n모두 녹았습니다.');
+        setTitleTxt(0);
         setShowFinishModal(true);
-      }, 3000);
+      }, 8000);
     }
   }, [pplNum]);
 
   return (
-    <>
+    <Container>
       {showTMIModal && (
         <TmiOpenModalContent onClick={handleTMIModal} userId={pplNum + 1} />
       )}
@@ -57,9 +57,12 @@ const GamePage = () => {
         <BGGrad />
         <BGImage src={bgImg} alt='background' />
       </GamePageBox>
-    </>
+    </Container>
   );
 };
+const Container = styled.div`
+  position: relative;
+`;
 const BGGrad = styled.div`
   position: absolute;
   top: 0;
