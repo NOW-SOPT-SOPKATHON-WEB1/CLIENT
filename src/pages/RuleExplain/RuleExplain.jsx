@@ -8,7 +8,7 @@ const RuleExplain = () => {
     navigate('/bpage');
   };
   return (
-    <div style={{width: "375px", height: "667px"}}>
+    <div style={{ width: '375px', height: '667px', position: 'relative' }}>
       <Img src={hands} alt='악수'></Img>
       <WrapperDiv>
         <HeaderDiv>멜팅에 어서 오세요.</HeaderDiv>
@@ -116,8 +116,8 @@ const MainButton = styled.button`
 const Img = styled.img`
   width: 200px;
   height: 200px;
-  position: fixed;
-  padding-top: 38rem;
-  padding-left: 15rem;
+  position: absolute;
+  right: 2.4rem;
+  bottom: 8.5rem;
   z-index: 2;
 `;
