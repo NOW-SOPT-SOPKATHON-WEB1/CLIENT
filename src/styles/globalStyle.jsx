@@ -8,11 +8,9 @@ const baseStyle = css`
     background-color: #e0e0e0;
   }
   body {
-  }
-  body {
     width: 375px; /* 모바일 가로 사이즈 375 고정 */
     height: 667px;
-    /* min-height: 100vh; */
+    min-height: 667px;
     margin: 0 auto; /* 중앙 정렬 */
     overflow-x: hidden; /* 가로 스크롤 방지 */
     background-color: #fff; /* body 영역을 하얀색으로 설정 */
