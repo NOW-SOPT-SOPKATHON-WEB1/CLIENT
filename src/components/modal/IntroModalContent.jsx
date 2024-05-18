@@ -20,9 +20,11 @@ const IntroModalContent = () => {
             </p>
           </TitleWrapper>
 
-          <ModalCheckBtn type='button' onClick={onClickToggleModal}>
-            확인
-          </ModalCheckBtn>
+          <ModalCheckBtn
+            type='button'
+            onClick={onClickToggleModal}
+            value='확인'
+          ></ModalCheckBtn>
         </WhiteModal>
       )}
     </>
@@ -36,8 +38,7 @@ const TitleWrapper = styled.div`
   width: 28rem;
   height: 7.2rem;
   position: relative;
-  top: 3rem;
-  margin-bottom: 8rem;
+  bottom: 1rem;
 
   p {
     font-size: 1.6rem;
