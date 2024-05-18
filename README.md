@@ -37,7 +37,7 @@
         </td>
       <td style="min-width: 150px;">
             <a href="https://github.com/j-nary">
-              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/83453646/07fef1be-236d-4726-8214-b8705f25cab9" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/83453646/5305a6f0-a079-45ed-9f62-f913840f6c4c" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>j-nary</b>
             </a>
