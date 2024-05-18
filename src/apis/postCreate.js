@@ -4,7 +4,7 @@ import serverAxios from './serverAxios';
 const postCreate = async (cnt) => {
   try {
     const res = await serverAxios.post(`/room/create`, { peopleCount: cnt });
-    console.log(res);
+    console.log({res, cnt});
     return res.data.status;
   } catch (error) {
     console.log(error);

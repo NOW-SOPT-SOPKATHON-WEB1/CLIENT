@@ -15,9 +15,11 @@ const RoomCreate = () => {
   const postCreateRes = async () => {
     const res = await postCreate(memberCnt);
   };
-  useEffect(() => {
+
+  const handleBtn = () => {
+    setIsModalOpen(true);
     postCreateRes();
-  }, []);
+  }
   return (
     <>
       <Background src={bgSrc}>
@@ -26,7 +28,7 @@ const RoomCreate = () => {
           <s.Title>인원수를 선택해 주세요</s.Title>
           <Dropdown memberCnt={memberCnt} setMemberCnt={setMemberCnt} />
         </s.Container>
-        <div onClick={() => setIsModalOpen(true)}>
+        <div onClick={handleBtn}>
           <Button>방 만들기</Button>
         </div>
       </Background>
