@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2> (서비스이름) </h2>
+<h2> Melting </h2>
 
 <img src=""  alt="서비스대표-이미지" />
 <div>(서비스 소개)</div>
@@ -37,9 +37,9 @@
         </td>
       <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/83453646/07fef1be-236d-4726-8214-b8705f25cab9" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>j-nary</b>
             </a>
         </td>
       <td style="min-width: 150px;">
