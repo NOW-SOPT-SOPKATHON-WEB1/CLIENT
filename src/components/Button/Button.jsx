@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 const ButtonContainer = styled.button`
   position: absolute;
-  bottom: 12%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
 
