@@ -1,5 +1,4 @@
 import React from 'react';
-import bgSrc from '../../assets/bgImg.png';
 import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
@@ -9,15 +8,15 @@ const Wrapper = styled.div`
 `;
 
 const BGImage = styled.div`
-  background-image: url(${bgSrc});
+  background-image: url(${(props) => props.src});
   width: 375px;
   height: 667px;
 `;
 
-const Background = ({ children }) => {
+const Background = ({ children, src }) => {
   return (
     <Wrapper>
-      <BGImage>{children}</BGImage>
+      <BGImage src={src}>{children}</BGImage>
     </Wrapper>
   );
 };
