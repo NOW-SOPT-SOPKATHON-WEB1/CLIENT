@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import landing from '../../assets/gamePage/landing.png';
 
-
 export const MainButton = styled.button`
   width: 350px;
   height: 50px;
@@ -33,8 +32,13 @@ export const MainDiv = styled.div`
 `;
 
 export const RuleDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-grayscale-gray09, #525252);
-  width: 115px;
+  width: 10rem;
+  position: relative;
+  top: 2rem;
   /* Text/Body01: SemiBold */
   font-family: Pretendard;
   font-size: 14px;
