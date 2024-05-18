@@ -9,7 +9,7 @@ const GamePageH1 = styled.h1`
   margin: 3.5rem 2rem;
   top: 3rem;
   /* Text/Head02: Bold */
-  font-family: Pretendard;
+  font-family: 'ONE Mobile';
   font-size: 2.3rem;
   font-style: normal;
   font-weight: 700;
