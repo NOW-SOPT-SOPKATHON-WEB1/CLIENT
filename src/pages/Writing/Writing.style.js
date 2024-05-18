@@ -1,27 +1,41 @@
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.div`
-  height: 100vh;
-`
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
 
-  padding: 0 1.5rem;
+  padding-left: 2rem;
 `;
 
-export const Title = styled.p`
-  align-self: flex-start;
+export const Title = styled.div`
+  color: white;
+
+  padding: 1.8rem 0 1rem 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.18px;
 `;
 
 export const Input = styled.input`
-  width: 20rem;
-  padding: 0.5rem;
+  width: 33.5rem;
+  height: 5.3rem;
+  padding: 1rem 2rem;
 
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0;
+  border-radius: 10px;
 
-  background-color: #ececec;
+  background-color: white;
   font-size: 1rem;
 `;
+
+export const TextInput = styled.textarea`
+  width: 33.5rem;
+  height: 15rem;
+
+  padding: 1.7rem 1.9rem;
+
+  border: 0;
+  border-radius: 10px;
+
+  resize: none;
+`
