@@ -29,9 +29,12 @@ export const Dropdown = () => {
       <FormControl
         sx={{
           m: 1,
-          width: 335,
-          backgroundColor: '#D6D6D6',
-          border: '0px',
+          width: '33.5rem',
+          height: '5.3rem',
+          margin: 0,
+          backgroundColor: 'white',
+          borderRadius: '10px',
+          border: '1px solid #F5F6F9',
           borderRadius: '8px',
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
@@ -52,6 +55,12 @@ export const Dropdown = () => {
           value={memberCnt}
           onChange={handleChange}
           MenuProps={MenuProps}
+          sx={{
+            fontSize: ' 18px',
+            fontWeight: 500,
+            lineHeight: '150%',
+            letterSpacing: '-0.18px',
+          }}
         >
           {memberCnts.map((cnt) => (
             <MenuItem key={cnt} value={cnt}>

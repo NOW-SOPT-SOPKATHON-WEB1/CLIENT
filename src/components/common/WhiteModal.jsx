@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-function Modal({ children }) {
+function WhiteModal({ children }) {
   return (
     <ModalContainer>
       <DialogBox>{children}</DialogBox>
@@ -11,7 +11,7 @@ function Modal({ children }) {
 }
 
 const ModalContainer = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -30,7 +30,7 @@ const DialogBox = styled.div`
   box-sizing: border-box;
   width: 33.4rem;
   height: 24.5rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0 30px rgb(30 30 30 / 18.5%);
   border: 1px solid rgba(101, 163, 255, 0.5);
   border-radius: 20px;
@@ -48,4 +48,4 @@ const Backdrop = styled.div`
   background-color: rgba(30, 36, 67, 0.53);
 `;
 
-export default Modal;
+export default WhiteModal;
