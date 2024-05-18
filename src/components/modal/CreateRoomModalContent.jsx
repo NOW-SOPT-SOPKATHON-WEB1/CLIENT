@@ -3,13 +3,15 @@ import Modal from '../common/Modal';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import styled from '@emotion/styled';
 import codeBG from '../../assets/modal/codeBG.svg';
+import { useNavigate } from 'react-router-dom';
 
 const CreateRoomModalContent = () => {
   const [value, setValue] = useState('000000');
   const [isOpenModal, setOpenModal] = useState(true);
-
+  const navigate = useNavigate();
   const onClickToggleModal = () => {
     setOpenModal(false);
+    navigate('/writing');
   };
 
   return (
@@ -74,6 +76,7 @@ const CopyBtn = styled.button`
   border-radius: 0.8rem;
   font-size: 2rem;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 const NumberContainer = styled.div`

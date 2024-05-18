@@ -17,9 +17,7 @@ const MenuProps = {
 
 const memberCnts = [4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-export const Dropdown = () => {
-  const [memberCnt, setMemberCnt] = useState(4);
-  console.log({ memberCnt });
+export const Dropdown = ({memberCnt, setMemberCnt}) => {
   const handleChange = (event) => {
     setMemberCnt(event.target.value);
   };
