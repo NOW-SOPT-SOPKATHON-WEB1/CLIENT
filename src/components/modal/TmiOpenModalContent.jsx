@@ -1,27 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import WhiteModal from '../common/WhiteModal';
+import getTMI from '../../apis/getTMI';
 
-const TmiOpenModalContent = ({
-  title = '첫 번째 TMI',
-  body = '오늘 나는 집에서 트월킹을 연습했다',
-  name = '김소희',
-  onClick,
-}) => {
+const TmiOpenModalContent = ({ onClick, userId }) => {
   const [isOpenModal, setOpenModal] = useState(false);
-
+  const [tmi, setTmi] = useState({
+    title: '첫 번째 TMI',
+    body: '오늘 나는 집에서 트월킹을 연습했다',
+    name: '김소희',
+  });
   const handleCheckBtnClick = () => {
     setOpenModal(!isOpenModal);
   };
-
+  const getTmiRes = async () => {
+    const res = await getTMI(1, userId);
+    const newTmi = {
+      title: `${res.id}번째 TMI`,
+      body: res.content,
+      name: res.name,
+    };
+    setTmi(newTmi);
+  };
+  useEffect(() => {
+    getTmiRes();
+  }, []);
   return (
     <>
       <WhiteModal>
-        <Title>{title}</Title>
-        <TmiBody>{body}</TmiBody>
+        <Title>{tmi.title}</Title>
+        <TmiBody>{tmi.body}</TmiBody>
 
         {isOpenModal ? (
-          <NameLabel onClick={onClick}>{name}</NameLabel>
+          <NameLabel onClick={onClick}>{tmi.name}</NameLabel>
         ) : (
           <CheckBtn onClick={handleCheckBtnClick}>누구일까요?</CheckBtn>
         )}
