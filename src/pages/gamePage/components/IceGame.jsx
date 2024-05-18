@@ -24,7 +24,7 @@ const IceGame = () => {
 const IceFlexWrapper = styled.div`
   display: flex;
   position: relative;
-  margin-top: -28px;
+  margin-top: -2.4rem;
 `;
 const IceGameContainer = styled.div`
   display: flex;
