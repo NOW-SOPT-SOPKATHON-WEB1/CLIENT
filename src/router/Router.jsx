@@ -14,9 +14,6 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<APage />}></Route>
-        <Route path='/bpage' element={<BPage />}></Route>
-        <Route path='/cpage' element={<CPage />}></Route>
-        <Route path='/dpage' element={<DPage />}></Route>
         <Route path='/game' element={<GamePage />}></Route>
         <Route path='/room-create' element={<RoomCreate />}></Route>
         <Route path='/room-join' element={<RoomJoin />}></Route>

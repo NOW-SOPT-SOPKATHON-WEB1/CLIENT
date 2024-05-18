@@ -15,6 +15,8 @@ export const Icon = styled.img`
   left: 2rem;
   width: 2.4rem;
   height: 2.5rem;
+  
+  cursor: pointer;
 `;
 export const Header = styled.div`
   padding-top: 0.5rem;
