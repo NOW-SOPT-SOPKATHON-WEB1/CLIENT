@@ -8,6 +8,8 @@ const baseStyle = css`
     background-color: #e0e0e0;
   }
   body {
+  }
+  body {
     width: 375px; /* 모바일 가로 사이즈 375 고정 */
     height: 667px;
     max-height: 667px;

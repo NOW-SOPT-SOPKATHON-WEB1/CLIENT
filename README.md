@@ -1,52 +1,58 @@
 <div align="center">
 
-<h2> (서비스이름) </h2>
+<h2> Melting </h2>
 
 <img src=""  alt="서비스대표-이미지" />
-<div>(서비스 소개)</div>
+<div>처음 만난 사람들과 사용하는 아이스브레이킹 게임</div>
 
 </div>
 
-<h2> ✨ (서비스) 주요 기능 </h2>
+<h2> ✨ 멜팅 주요 기능 </h2>
 
-<h3> 1️⃣ (기능) </h3>
-<img src=""  alt="기능1-대표이미지" />
-<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+<h3> 1️⃣ 얼음 녹이기 </h3>
 
-<h3> 2️⃣ (기능) </h3>
-<img src=""  alt="기능1-대표이미지" />
-<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/188d609d-96b4-4203-a700-13a5cd233858"  alt="기능1-대표이미지" />
+<div ><strong> TMI 공개 및 작성자 공개 </strong>   <br/>작성한 TMI를 보고 팀원들이 TMI의 주인이 누구인지 맞힙니다</div>
+
+<h3> 2️⃣ 방 만들기 </h3>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/4ed304f0-9628-4dde-a6f5-2b2edf631608"  alt="기능2-대표이미지" />
+<div ><strong> 방 만들기 </strong> <br/>방을 만들어 처음 만난 사람들이 이용할 수 있는 아이스브레이킹 게임으로 진입할 수 있도록 합니다</div>
+
+<h3> 3️⃣ TMI 입력하기 </h3>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/46540bd0-b69b-4db8-8cb7-f32b807585c3"  alt="기능3-대표이미지" />
+
+<div ><strong> 오늘, 당신의 TMI 는 무엇인가요? </strong>   <br/> 돌아가며 자신의 TMI를 입력합니다</div>
 
 <h2> 👥 Team </h2>
 
 <table align="center">
     <tr align="center">
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/wrryu09">
+              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/e6c7b49b-e3b4-4a62-8ce8-86297484801d" width="200" alt="깃허브계정-프로필사진"/>
               <br />
-              <b>(깃허브계정명)</b>
+              <b>wrryu09</b>
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/ijieun">
+              <img src="https://avatars.githubusercontent.com/u/99737532?v=4" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>ijieun</b>
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/j-nary">
+              <img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/83453646/5305a6f0-a079-45ed-9f62-f913840f6c4c" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>j-nary</b>
             </a>
         </td>
       <td style="min-width: 150px;">
-            <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+            <a href="https://github.com/j-nary">
+              <img src="https://avatars.githubusercontent.com/u/63349683?s=400&u=a84d37faf374b967d62a87295ecef5cd2cb123c9&v=4" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>(202010927choiminjune)</b>
             </a>
         </td>
     </tr>
@@ -66,16 +72,16 @@
     </tr>
   	<tr align="center">
        <td>
-            (역할분담) <br/>
+            메인 게임 페이지 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            모달 제작 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            TMI 생성, 방 개설 및 참여 <br/>
       </td>
        <td>
-            (역할분담) <br/>
+            랜딩페이지, 방 참여 방법 선택 <br/>
       </td>
     </tr>
 </table>
@@ -161,7 +167,7 @@ Github-flow
 
 <h2> 새싹 웨비 Before and After</h2>
 <h3>Before</h3>
-<img src="" alt="웨비 팀원들 사진 (before)"/>
- 
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/fddeee7c-7ef5-432e-975f-ae671995ebfe" alt="웨비 팀원들 사진 (before)"/>
+
 <h3>After</h3>
 <img src="" alt="웨비 팀원들 사진 (after)"/>
