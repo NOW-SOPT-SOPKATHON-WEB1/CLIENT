@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import IceGame from './components/IceGame';
 import styled from '@emotion/styled';
 import bgImg from '../../assets/gamePage/bgImg.png';
 import Thermo from './components/Thermo';
 import Modal from '../../components/common/Modal';
 import ModalCheckBtn from '../../components/common/ModalCheckBtn';
+import Finished from './components/Finished';
+import GameTitle from './components/GameTitle';
 
 const GamePage = () => {
   const [showTMIModal, setShowTMIModal] = useState(false);
   const [pplNum, setPplNum] = useState(8);
+  const [titleTxt, setTitleTxt] = useState(
+    '얼음조각을 눌러\n우리 사이의 온도를 올려주세요!'
+  );
   const maxpplNum = 8;
 
   const handleTMIModal = () => {
@@ -18,18 +23,24 @@ const GamePage = () => {
   const decreasePPlnum = () => {
     setPplNum((prev) => prev - 1);
   };
+
+  useEffect(() => {
+    if (pplNum === 0) {
+      setTitleTxt('우리 사이 얼음이\n모두 녹았습니다.');
+    }
+  }, [pplNum]);
+
   return (
     <>
-      {showTMIModal ? (
+      {showTMIModal && (
         <Modal>
           <ModalCheckBtn onClick={handleTMIModal} />
         </Modal>
-      ) : null}
+      )}
+      {pplNum === 0 && <Finished />}
 
       <GamePageBox>
-        <GamePageH1>
-          얼음조각을 눌러{'\n'}우리 사이의 온도를 올려주세요!
-        </GamePageH1>
+        <GameTitle text={titleTxt} />
         <IceGame
           handleTMIModal={handleTMIModal}
           decreasePPlnum={decreasePPlnum}
@@ -55,7 +66,7 @@ const BGGrad = styled.div`
   background: linear-gradient(
     180deg,
     #fff 13.42%,
-    #fff 38.09%,
+    #fff 32.09%,
     rgba(255, 255, 255, 0) 65.07%
   );
 `;
@@ -74,8 +85,7 @@ const GamePageBox = styled.div`
   flex-direction: column;
   height: 667px;
   width: 100%;
-  align-items: center;
-  background-color: #6c9eff;
+  background-color: #256cf8;
 `;
 const BGImage = styled.img`
   position: absolute;
@@ -83,21 +93,7 @@ const BGImage = styled.img`
   height: fit-content;
   z-index: 1;
 `;
-const GamePageH1 = styled.h1`
-  color: #256cf8;
-  margin: 3.5rem 0;
 
-  top: 3rem;
-  /* Text/Head02: Bold */
-  font-family: Pretendard;
-  font-size: 2.3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.026rem;
-  z-index: 2;
-  white-space: pre-wrap;
-`;
 const ThermoTxtWrapper = styled.div`
   display: flex;
   flex-direction: column;
