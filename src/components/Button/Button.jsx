@@ -25,8 +25,8 @@ const ButtonContainer = styled.button`
   cursor: pointer;
 `;
 
-const Button = ({ children }) => {
-  return <ButtonContainer>{children}</ButtonContainer>;
+const Button = ({ children, style }) => {
+  return <ButtonContainer style={{...style}}>{children}</ButtonContainer>;
 };
 
 export default Button;

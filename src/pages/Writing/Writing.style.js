@@ -25,7 +25,14 @@ export const Input = styled.input`
   border-radius: 10px;
 
   background-color: white;
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: -0.18px;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const TextInput = styled.textarea`
@@ -38,4 +45,12 @@ export const TextInput = styled.textarea`
   border-radius: 10px;
 
   resize: none;
-`
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.14px;
+  &:focus {
+    outline: none;
+  }
+`;
