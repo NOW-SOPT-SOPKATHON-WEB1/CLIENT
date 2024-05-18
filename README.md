@@ -2,7 +2,7 @@
 
 <h2> Melting </h2>
 
-<img src=""  alt="서비스대표-이미지" />
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/63349683/af624ec7-5b2d-4221-87cb-e024ec15246b"  alt="서비스대표-이미지" />
 <div>처음 만난 사람들과 사용하는 아이스브레이킹 게임</div>
 
 </div>
