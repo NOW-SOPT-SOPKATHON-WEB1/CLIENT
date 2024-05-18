@@ -28,12 +28,11 @@ const DialogBox = styled.div`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 290px;
-  height: 269px;
-
-  background-color: white;
+  width: 33.4rem;
+  height: 24.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 30px rgb(30 30 30 / 18.5%);
-  border: none;
+  border: 1px solid rgba(101, 163, 255, 0.5);
   border-radius: 20px;
 `;
 
@@ -45,7 +44,7 @@ const Backdrop = styled.div`
 
   width: 375px;
   height: 100vh;
-  background-color: rgb(30 30 30 / 18.5%);
+  background-color: rgba(30, 36, 67, 0.53);
 `;
 
 export default Modal;
