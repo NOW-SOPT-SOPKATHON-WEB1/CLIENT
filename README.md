@@ -1,21 +1,27 @@
 <div align="center">
 
-<h2> Melting </h2>
+<h2> Melting </h2>
 
 <img src=""  alt="서비스대표-이미지" />
-<div>(서비스 소개)</div>
+<div>처음 만난 사람들과 사용하는 아이스브레이킹 게임</div>
 
 </div>
 
-<h2> ✨ (서비스) 주요 기능 </h2>
+<h2> ✨ 멜팅 주요 기능 </h2>
 
-<h3> 1️⃣ (기능) </h3>
-<img src=""  alt="기능1-대표이미지" />
-<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+<h3> 1️⃣ 얼음 녹이기 </h3>
 
-<h3> 2️⃣ (기능) </h3>
-<img src=""  alt="기능1-대표이미지" />
-<div ><strong> (강조단어) </strong> (기능설명)  <br/></div>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/188d609d-96b4-4203-a700-13a5cd233858"  alt="기능1-대표이미지" />
+<div ><strong> TMI 공개 및 작성자 공개 </strong>   <br/>작성한 TMI를 보고 팀원들이 TMI의 주인이 누구인지 맞힙니다</div>
+
+<h3> 2️⃣ 방 만들기 </h3>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/4ed304f0-9628-4dde-a6f5-2b2edf631608"  alt="기능2-대표이미지" />
+<div ><strong> 방 만들기 </strong> <br/>방을 만들어 처음 만난 사람들이 이용할 수 있는 아이스브레이킹 게임으로 진입할 수 있도록 합니다</div>
+
+<h3> 3️⃣ TMI 입력하기 </h3>
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB1/CLIENT/assets/98469609/46540bd0-b69b-4db8-8cb7-f32b807585c3"  alt="기능3-대표이미지" />
+
+<div ><strong> 오늘, 당신의 TMI 는 무엇인가요? </strong>   <br/> 돌아가며 자신의 TMI를 입력합니다</div>
 
 <h2> 👥 Team </h2>
 
