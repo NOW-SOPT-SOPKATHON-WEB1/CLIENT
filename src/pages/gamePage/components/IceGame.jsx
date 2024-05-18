@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Ice from './Ice';
 import IceWhite from './IceWhite';
 
-const IceGame = () => {
+const IceGame = ({ handleTMIModal }) => {
   return (
     <IceGameContainer>
       <IceFlexWrapper>
@@ -16,23 +16,23 @@ const IceGame = () => {
       <IceFlexWrapper>
         <IceWhite />
         <IceWhite />
-        <Ice />
-        <Ice />
-        <Ice />
+        <Ice handleTMIModal={handleTMIModal} />
+        <Ice handleTMIModal={handleTMIModal} />
+        <Ice handleTMIModal={handleTMIModal} />
         <IceWhite />
       </IceFlexWrapper>
       <IceFlexWrapper>
         <IceWhite />
-        <Ice />
-        <Ice />
-        <Ice />
+        <Ice handleTMIModal={handleTMIModal} />
+        <Ice handleTMIModal={handleTMIModal} />
+        <Ice handleTMIModal={handleTMIModal} />
         <IceWhite />
       </IceFlexWrapper>
       <IceFlexWrapper>
         <IceWhite />
         <IceWhite />
-        <Ice />
-        <Ice />
+        <Ice handleTMIModal={handleTMIModal} />
+        <Ice handleTMIModal={handleTMIModal} />
         <IceWhite />
         <IceWhite />
       </IceFlexWrapper>

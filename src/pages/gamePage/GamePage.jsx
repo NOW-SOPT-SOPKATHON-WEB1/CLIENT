@@ -1,26 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import IceGame from './components/IceGame';
 import styled from '@emotion/styled';
 import bgImg from '../../assets/gamePage/bgImg.png';
 import Thermo from './components/Thermo';
+import Modal from '../../components/common/Modal';
+import ModalCheckBtn from '../../components/common/ModalCheckBtn';
 
 const GamePage = () => {
+  const [showTMIModal, setShowTMIModal] = useState(false);
+
+  const handleTMIModal = () => {
+    setShowTMIModal(!showTMIModal);
+  };
   return (
-    <GamePageBox>
-      <GamePageH1>
-        얼음조각을 눌러{'\n'}우리 사이의 온도를 올려주세요!
-      </GamePageH1>
-      <IceGame />
-      <ThermoPart>
-        <Thermo />
-        <ThermoTxtWrapper>
-          <ThermoTxtTitle>우리 사이</ThermoTxtTitle>
-          <ThermoTxt>-6˚C</ThermoTxt>
-        </ThermoTxtWrapper>
-      </ThermoPart>
-      <BGGrad />
-      <BGImage src={bgImg} alt='background' />
-    </GamePageBox>
+    <>
+      {showTMIModal ? (
+        <Modal>
+          <ModalCheckBtn onClick={handleTMIModal} />
+        </Modal>
+      ) : null}
+
+      <GamePageBox>
+        <GamePageH1>
+          얼음조각을 눌러{'\n'}우리 사이의 온도를 올려주세요!
+        </GamePageH1>
+        <IceGame handleTMIModal={handleTMIModal} />
+        <ThermoPart>
+          <Thermo />
+          <ThermoTxtWrapper>
+            <ThermoTxtTitle>우리 사이</ThermoTxtTitle>
+            <ThermoTxt>-6˚C</ThermoTxt>
+          </ThermoTxtWrapper>
+        </ThermoPart>
+        <BGGrad />
+        <BGImage src={bgImg} alt='background' />
+      </GamePageBox>
+    </>
   );
 };
 const BGGrad = styled.div`
