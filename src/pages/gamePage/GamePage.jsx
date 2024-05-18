@@ -7,6 +7,7 @@ import Modal from '../../components/common/Modal';
 import Finished from './components/Finished';
 import GameTitle from './components/GameTitle';
 import TmiOpenModalContent from '../../components/modal/TmiOpenModalContent';
+import AfterFinishModal from './components/AfterFinishModal';
 
 const GamePage = () => {
   const [showTMIModal, setShowTMIModal] = useState(false);
@@ -15,7 +16,7 @@ const GamePage = () => {
     '얼음조각을 눌러\n우리 사이의 온도를 올려주세요!'
   );
   const maxpplNum = 8;
-  const [showFinishModal, setShowFinishModal] = useState(false);
+  const [showFinishModal, setShowFinishModal] = useState(true);
 
   const handleTMIModal = () => {
     setShowTMIModal(!showTMIModal);
@@ -40,7 +41,7 @@ const GamePage = () => {
         <TmiOpenModalContent onClick={handleTMIModal} userId={pplNum + 1} />
       )}
       {pplNum === 0 && <Finished />}
-      {!showTMIModal && showFinishModal && <Modal />}
+      {!showTMIModal && showFinishModal && <AfterFinishModal />}
       <GamePageBox>
         <GameTitle text={titleTxt} />
         <IceGame
