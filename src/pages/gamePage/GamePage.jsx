@@ -3,7 +3,6 @@ import IceGame from './components/IceGame';
 import styled from '@emotion/styled';
 import bgImg from '../../assets/gamePage/bgImg.png';
 import Thermo from './components/Thermo';
-import Modal from '../../components/common/Modal';
 import Finished from './components/Finished';
 import GameTitle from './components/GameTitle';
 import TmiOpenModalContent from '../../components/modal/TmiOpenModalContent';
@@ -16,7 +15,7 @@ const GamePage = () => {
     '얼음조각을 눌러\n우리 사이의 온도를 올려주세요!'
   );
   const maxpplNum = 8;
-  const [showFinishModal, setShowFinishModal] = useState(true);
+  const [showFinishModal, setShowFinishModal] = useState(false);
 
   const handleTMIModal = () => {
     setShowTMIModal(!showTMIModal);
