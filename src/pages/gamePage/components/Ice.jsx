@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { css, keyframes } from '@emotion/react';
 
 /** 얼음~! */
-const Ice = () => {
+const Ice = ({ handleTMIModal, decreasePPlnum }) => {
   const [touched, setTouched] = useState(false);
   const [hidden, setHidden] = useState(false);
 
@@ -19,6 +19,8 @@ const Ice = () => {
 
   const handleIceClick = () => {
     console.log('ice clicked');
+    handleTMIModal();
+    decreasePPlnum();
     setTouched(true);
   };
   return (

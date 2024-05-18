@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import GlobalStyle from './styles/globalStyle.jsx';
+import GlobalFonts from './styles/globalFonts.jsx';
 
 // 루트 요소에 대한 참조를 가져옵니다.
 const rootElement = document.getElementById('root');
@@ -13,6 +14,7 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <GlobalStyle />
+    <GlobalFonts />
     <App />
   </React.StrictMode>
 );
