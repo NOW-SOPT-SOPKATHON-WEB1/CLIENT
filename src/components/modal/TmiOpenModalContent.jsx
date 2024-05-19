@@ -6,9 +6,9 @@ import getTMI from '../../apis/getTMI';
 const TmiOpenModalContent = ({ onClick, userId }) => {
   const [isOpenModal, setOpenModal] = useState(false);
   const [tmi, setTmi] = useState({
-    title: '첫 번째 TMI',
-    body: '오늘 나는 집에서 트월킹을 연습했다',
-    name: '김소희',
+    title: '',
+    body: '',
+    name: '',
   });
   const handleCheckBtnClick = () => {
     setOpenModal(!isOpenModal);
