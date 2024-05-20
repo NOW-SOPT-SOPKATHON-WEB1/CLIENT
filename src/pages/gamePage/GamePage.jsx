@@ -95,7 +95,6 @@ const GamePageBox = styled.div`
 const BGImage = styled.img`
   position: absolute;
   width: 375px;
-  height: fit-content;
   z-index: 1;
 `;
 

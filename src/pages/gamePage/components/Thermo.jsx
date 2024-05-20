@@ -46,7 +46,6 @@ const ThermoHeart = styled.img`
   position: absolute;
   bottom: 9px;
   width: 3.1rem;
-  height: fit-content;
   z-index: 4;
 `;
 export default Thermo;

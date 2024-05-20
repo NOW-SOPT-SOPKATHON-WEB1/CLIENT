@@ -58,7 +58,6 @@ const IceContainer = styled.div`
 `;
 const IceImg = styled.img`
   width: 7.7rem;
-  height: fit-content;
 `;
 const IceTouchBox = styled.div`
   position: absolute;
