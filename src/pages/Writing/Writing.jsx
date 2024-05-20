@@ -24,7 +24,7 @@ const Writing = () => {
   const handleBtn = () => {
     if (next) {
       setIsModalOpen(true);
-      postCreateRes();
+      // postCreateRes();
     }
   };
   return (

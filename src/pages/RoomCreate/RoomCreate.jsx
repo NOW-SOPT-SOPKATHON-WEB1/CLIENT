@@ -18,8 +18,8 @@ const RoomCreate = () => {
 
   const handleBtn = () => {
     setIsModalOpen(true);
-    postCreateRes();
-  }
+    // postCreateRes();
+  };
   return (
     <>
       <Background src={bgSrc}>

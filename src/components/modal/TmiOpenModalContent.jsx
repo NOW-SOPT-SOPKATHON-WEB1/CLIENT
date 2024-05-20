@@ -2,37 +2,38 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import WhiteModal from '../common/WhiteModal';
 import getTMI from '../../apis/getTMI';
+import TMIDATA from '../../constants/tmiData';
 
 const TmiOpenModalContent = ({ onClick, userId }) => {
   const [isOpenModal, setOpenModal] = useState(false);
-  const [tmi, setTmi] = useState({
-    title: '',
-    body: '',
-    name: '',
-  });
+  // const [tmi, setTmi] = useState({
+  //   title: '',
+  //   body: '',
+  //   name: '',
+  // });
   const handleCheckBtnClick = () => {
     setOpenModal(!isOpenModal);
   };
-  const getTmiRes = async () => {
-    const res = await getTMI(1, userId);
-    const newTmi = {
-      title: `${res.id}번째 TMI`,
-      body: res.content,
-      name: res.name,
-    };
-    setTmi(newTmi);
-  };
-  useEffect(() => {
-    getTmiRes();
-  }, []);
+  // const getTmiRes = async () => {
+  //   const res = await getTMI(1, userId);
+  //   const newTmi = {
+  //     title: `${res.id}번째 TMI`,
+  //     body: res.content,
+  //     name: res.name,
+  //   };
+  //   setTmi(newTmi);
+  // };
+  // useEffect(() => {
+  //   getTmiRes();
+  // }, []);
   return (
     <>
       <WhiteModal>
-        <Title>{tmi.title}</Title>
-        <TmiBody>{tmi.body}</TmiBody>
+        <Title>{TMIDATA[userId].id}번째 tmi</Title>
+        <TmiBody>{TMIDATA[userId].tmi}</TmiBody>
 
         {isOpenModal ? (
-          <NameLabel onClick={onClick}>{tmi.name}</NameLabel>
+          <NameLabel onClick={onClick}>{TMIDATA[userId].name}</NameLabel>
         ) : (
           <CheckBtn onClick={handleCheckBtnClick}>누구일까요?</CheckBtn>
         )}

@@ -37,7 +37,7 @@ const GamePage = () => {
   return (
     <Container>
       {showTMIModal && (
-        <TmiOpenModalContent onClick={handleTMIModal} userId={pplNum + 1} />
+        <TmiOpenModalContent onClick={handleTMIModal} userId={7 - pplNum} />
       )}
       {pplNum === 0 && <Finished />}
       {!showTMIModal && showFinishModal && <AfterFinishModal />}
